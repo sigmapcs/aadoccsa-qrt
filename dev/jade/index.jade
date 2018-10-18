@@ -1,0 +1,66 @@
+extends templates/template
+append config
+  -paginaActual = "inicio"
+  -titulo = "Incio"
+
+block banner
+  .slider-wrapper.theme-default
+    #slider.nivoSlider
+      -for (var i = 1; i<=4; i++)
+        img(src="img/slides/slider#{i}.jpg")
+
+block main
+  .ed-container
+    .ed-item.tablet-50.web-25.home
+      a.link-title(href="servicios.html"): h2.home__title Servicios
+      ul.home__services
+        li ventas
+        li instalacion
+        li reparaciones
+        li mantenimientos
+      a.vermas(href="servicios.html") ver más
+    .ed-item.tablet-50.web-25.home
+      a.link-title(href="productos.html"): h2.home__title Productos
+      p.home__text Somos Distribuidores autorizados de los Productos
+      img.home__img(src="img/logosmall.png")
+      a.vermas(href="productos.html") ver más
+    .ed-item.tablet-50.web-25.home
+      a.link-title(href="promociones.html"): h2.home__title Promociones
+      p.home__text Contamos con una gran variedad de promociones
+      a.vermas(href="promociones.html") ver más
+    .ed-item.tablet-50.web-25.home
+      a.link-title(href="ofertas.html"): h2.home__title Ofertas
+      p.home__text Visite nuestra sección de oferta para conocer los prouctos que tenemos en descuento
+      a.vermas(href="ofertas.html") ver más
+  .ed-container
+    .ed-item
+      blockquote.home-title Sabemos lo que usted necesita
+        span Porque somos líderes
+
+  //.ed-container
+  //    .ed-item.tablet-50.web-50.svideo
+  //      .ed-video
+  //        <iframe src="https://www.youtube.com/embed/kDAIhUsFT3I?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  //    .ed-item.tablet-50.web-50
+  //      .ed-video
+  //        <iframe src="https://www.youtube.com/embed/f09-Bhi675o?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+block scripts
+  //- script(src="js/ed-ui.js")
+  //- script.
+  //-   edModal(`<img src="img/navidad.jpeg"/>`)
+  //- script.
+  //-     function isMobile() {
+  //-         return (
+  //-             (navigator.userAgent.match(/Android/i)) ||
+  //-             (navigator.userAgent.match(/webOS/i)) ||
+  //-             (navigator.userAgent.match(/iPhone/i)) ||
+  //-             (navigator.userAgent.match(/iPod/i)) ||
+  //-             (navigator.userAgent.match(/iPad/i)) ||
+  //-             (navigator.userAgent.match(/BlackBerry/i))
+  //-         );
+  //-     }
+  //-     if( isMobile() ){
+  //-         sliderSatar();
+  //-     } else {
+  //-         openYouTubeModal('.modal-youtube');
+  //-     }
