@@ -40,8 +40,8 @@
       </div>
       <div class="pcs-item tar">
         <p id="gdl" class="city-phone gdl icon1-phone">(33) 38 55 81 21 / (33) 36 13 37 18 / (33) 36 19 31 88 / (33) 36 58 23 38<a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank" class="icon1-whatsapp">33 16 00 65 82</a></p>
-        <p id="qrt" class="city-phone qrt icon1-phone">(442) 980 07 88<a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank" class="icon1-whatsapp">33 16 00 65 82</a></p>
-        <p id="leon" class="city-phone leon icon1-phone">(477) 167 50 08 / (477) 167 50 09<a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank" class="icon1-whatsapp">33 16 00 65 82</a></p>
+        <p id="qrt" class="city-phone qrt icon1-phone"><a href="tel:4429800788" style="color:#fff;">(442) 980 07 88 </a><a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank" class="icon1-whatsapp">33 16 00 65 82</a></p>
+        <p id="leon" class="city-phone leon icon1-phone"> <a href="tel:4771675008" style="color:#fff;">(477) 167 50 08</a> / <a href="tel:4771675009" style="color:#fff;">(477) 167 50 09</a><a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank" class="icon1-whatsapp">33 16 00 65 82</a></p>
       </div>
     </div>
   </div>
@@ -104,7 +104,7 @@
         <ul class="adress">
           <li>Aire Acondicionado de Occidente S.A de C.V.</li>
           <li><span>Domicilio:</span>Micro Parque Industrial Atta, Carr. Estatal 500 a Chichimequillas Ejido Tierra Blanca</li>
-          <li class="phone"><span>Teléfono:</span>(442) 980 07 88</li>
+          <li class="phone"><span>Teléfono:</span><a href="tel:4429800788">(442) 980 07 88 </a></li>
           <li><span>Whatsapp:</span><a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank">33 16 00 65 82</a></li>
           <li><span>E-mail:</span><a href="mailto:formulario@aadoccsa.com.mx">formulario@aadoccsa.com.mx</a></li>
         </ul>
@@ -113,7 +113,7 @@
         <ul class="adress">
           <li>Aire Acondicionado de Occidente S.A de C.V.</li>
           <li><span>Domicilio:</span>Boulevard Juan José Torres Landa 5306 local 5 Col. Jardines de Jerez</li>
-          <li><span>Teléfonos:</span>(477) 167 50 08 / (477) 167 50 09</li>
+          <li><span>Teléfonos:</span><a href="tel:4771675008">(477) 167 50 08</a> / <a href="tel:4771675009">(477) 167 50 09</a></li>
           <li><span>Whatsapp:</span><a href="https://api.whatsapp.com/send?phone=3316006582&amp;text=Quiero mas información sobre sus productos" target="_blank">33 16 00 65 82</a></li>
           <li><span>E-mail:</span><a href="mailto:formulario@aadoccsa.com.mx">formulario@aadoccsa.com.mx</a></li>
         </ul>
@@ -150,4 +150,23 @@
   <script src="js/scripts.js"></script>
   <script src="js/city.js"></script>
   <script src="js/scripts-es6.js"></script>
+  <script>
+    (function () {
+      var options = {
+          whatsapp: "+52 1 33 1600 6582", // WhatsApp number
+          email: "formulario@aadoccsa.com.mx", // Email
+          call: "33 3658 2338", // Call phone number
+          company_logo_url: "https://www.aadoccsa.com.mx/img/logo2.png", // URL of company logo (png, jpg, gif)
+          greeting_message: "Hola, ¿Cómo podemos ayudarte?", // Text of greeting message
+          call_to_action: "Contáctanos", // Call to action
+          button_color: "#941600", // Color of button
+          position: "left", // Position may be 'right' or 'left'
+          order: "whatsapp,call,email" // Order of buttons
+      };
+      var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
 </body>
