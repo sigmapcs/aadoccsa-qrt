@@ -1,3 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.aadoccsa.com.mx/$1 [R,L]
+
 # Con especificamos cache
 <IfModule mod_expires.c>
 ExpiresActive On
